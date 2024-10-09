@@ -1,0 +1,71 @@
+/* Resetting the default browser settings. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Page backgound color. */
+    --background-color: #c9359c;
+
+    /* Form background color. */
+    --form-background-color: #252525;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Styling form. */
+.form-section {
+    width: 48rem;
+    height: 38rem;
+    background-color: var(--form-background-color);
+    border-radius: 1rem;
+    margin: 4rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: inline-block;
+
+    /* Form Outlines. */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+div + div {
+    margin-top: 2rem;
+}
+
+label {
+    /* Uniform size and alignment. */
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+    color: white;
+}
+
+input, textarea {
+    font: 2rem 'sans-serif';
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Highlights for focused elements. */
+    border-color: #000;
+}
+
+.button {
+    padding: 90px;
+}
+
+button {
+    margin-left: 0.5rem;
+}
+
